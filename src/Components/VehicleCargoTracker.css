@@ -1,4 +1,17 @@
 .VehicleCargoTracker {
   box-shadow: 0 4px 8px 0 #00000080;
-  height: 48px;
+
+  width: 90vw;
+  max-width: 800px;
+
+  margin: 0 auto;
+
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
 }
+
+.VehicleCargoTracker h1 {
+  grid-column-start: 1;
+  grid-column-end: 6;
+}
+
