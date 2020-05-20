@@ -8,6 +8,9 @@
 
   display: grid;
   grid-template-columns: repeat(5, 1fr);
+
+  justify-items: center;
+  align-items: center;
 }
 
 .VehicleCargoTracker h1 {

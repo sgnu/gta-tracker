@@ -15,17 +15,20 @@ const standardRangeCars = [
   "Turismo R"
 ]
 
+const allFalse = [false, false, false, false, false, false, false, false, false, false, false, false];
+
 class VehicleCargoTracker extends React.Component {
   constructor(props) {
     super(props);
+
     this.state = {
-      standardRange: [false, false, false, false, false, false, false, false, false, false]
+      standardRangeCars: allFalse
     };
   }
 
   render() {
-    const standardVehicles = standardRangeCars.map((vehicle) => {
-      return <Vehicle key = { vehicle } vehicleName = { vehicle } />
+    const standardVehicles = standardRangeCars.map((vehicle, index) => {
+      return <Vehicle key = { index } id={ index } enabled = { this.state.standardRangeCars[index] } vehicleName = { vehicle } />
     });
 
     return (

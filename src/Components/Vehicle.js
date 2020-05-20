@@ -13,13 +13,12 @@ class Vehicle extends React.Component {
 
   handleClick(e) {
     this.setState(state => ({ enabled: !this.state.enabled }));
-    this.setState(state => ({ color: this.state.enabled ? '#000000' : '#00000080' }));
   }
 
   render() {
     return (
       <div className="Vehicle" onClick={this.handleClick}>
-        <h2 style={{ color: this.state.color }}>{ this.props.vehicleName }</h2>
+        <h2 style={{ color: this.state.enabled ? '#000000' : '#00000080' }}> { this.props.id }: { this.props.vehicleName }</h2>
       </div>
     )
   }
