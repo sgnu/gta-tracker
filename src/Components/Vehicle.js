@@ -2,7 +2,8 @@ import React from 'react';
 
 const vehicleTypes = [
   "GTAstandardCars",
-  "GTAmidCars"
+  "GTAmidCars",
+  "GTAtopCars"
 ];
 
 class Vehicle extends React.Component {
